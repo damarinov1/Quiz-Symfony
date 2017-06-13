@@ -1,0 +1,16 @@
+{% set mode = app.session.get("mode") %}
+
+<div id="settings" class="tab-pane fade">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4>Settings</h4>
+        </div>
+        <div class="panel-body">
+            <form action="{{ path("changeMode") }}" method="POST">
+                <input type="radio" name="mode" value="tf" {% if mode == "tf" %} checked {% endif %} />Yes/No<br>
+                <input type="radio" name="mode" value="mc" {% if mode == "mc" %} checked {% endif %} />Multiple Choice<br>
+                <input class="btn btn-primary" type="submit" value="Save changes"/>
+            </form>
+        </div>
+    </div>
+</div>

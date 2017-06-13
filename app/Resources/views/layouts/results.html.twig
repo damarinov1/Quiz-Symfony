@@ -1,0 +1,19 @@
+{% set total = app.session.get("totalQuestionsCount") %}
+{% set answered = app.session.get("answeredQuestionsCount") %}
+{% set correct = app.session.get("correctQuestionsCount") %}
+
+<div class="container">
+    <div class="content">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>Your results</h4>
+            </div>
+            <div class="panel-body">
+                Total questions: {{ total }}<br>
+                Correct answers: {{ correct }}<br>
+                Wrong answers: {{ answered - correct }}<br>
+                <a href="{{ path("destroySession") }}"><button class="btn btn-primary">Start again</button></a>
+            </div>
+        </div>
+    </div>
+</div>

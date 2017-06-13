@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+{% set answerCount = app.session.get("answeredQuestionsCount") %}
+
+{% block body %}
+    <div id="quiz" class="tab-pane fade in active">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                {% for msg in app.session.flashbag.get("notice") %}
+                    <div class="alert alert-{{msg.type}}">
+                        <span style="font-weight: bold">{{ msg.message }}</span>
+                    </div>
+                {% endfor %}
+                <h4>Who said it?</h4>
+            </div>
+            <div class="panel-body">
+                <div class="question-box">
+                    "{{ questions[answerCount].getQuestion() }}"
+                </div>
+                <div class="answer-box">
+                    <form action="{{ path("checkAnswerMc") }}" method="post">
+                        {% for answer in answerList %}
+                            <button class="btn btn-primary" name="answer" value="{{answer.id}}" type="submit">{{ answer.answer }}</button><br>
+                        {% endfor %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

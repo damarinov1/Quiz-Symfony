@@ -1,0 +1,56 @@
+[13-Jun-2017 09:07:47 Europe/London] PHP Warning:  require(/var/www/quiz-symfony/vendor/symfony/polyfill-mbstring/bootstrap.php): failed to open stream: No such file or directory in /var/www/quiz-symfony/vendor/composer/autoload_real.php on line 66
+[13-Jun-2017 09:07:47 Europe/London] PHP Stack trace:
+[13-Jun-2017 09:07:47 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[13-Jun-2017 09:07:47 Europe/London] PHP   2. require() /var/www/quiz-symfony/web/app_dev.php:22
+[13-Jun-2017 09:07:47 Europe/London] PHP   3. require() /var/www/quiz-symfony/app/autoload.php:7
+[13-Jun-2017 09:07:47 Europe/London] PHP   4. ComposerAutoloaderInitcc5d363adbe6048c38a15e6c61be0ef8::getLoader() /var/www/quiz-symfony/vendor/autoload.php:7
+[13-Jun-2017 09:07:47 Europe/London] PHP   5. composerRequirecc5d363adbe6048c38a15e6c61be0ef8() /var/www/quiz-symfony/vendor/composer/autoload_real.php:56
+[13-Jun-2017 09:07:47 Europe/London] PHP Fatal error:  require(): Failed opening required '/var/www/quiz-symfony/vendor/symfony/polyfill-mbstring/bootstrap.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/quiz-symfony/vendor/composer/autoload_real.php on line 66
+[13-Jun-2017 09:07:47 Europe/London] PHP Stack trace:
+[13-Jun-2017 09:07:47 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[13-Jun-2017 09:07:47 Europe/London] PHP   2. require() /var/www/quiz-symfony/web/app_dev.php:22
+[13-Jun-2017 09:07:47 Europe/London] PHP   3. require() /var/www/quiz-symfony/app/autoload.php:7
+[13-Jun-2017 09:07:47 Europe/London] PHP   4. ComposerAutoloaderInitcc5d363adbe6048c38a15e6c61be0ef8::getLoader() /var/www/quiz-symfony/vendor/autoload.php:7
+[13-Jun-2017 09:07:47 Europe/London] PHP   5. composerRequirecc5d363adbe6048c38a15e6c61be0ef8() /var/www/quiz-symfony/vendor/composer/autoload_real.php:56
+[13-Jun-2017 09:07:50 Europe/London] PHP Warning:  require(/var/www/quiz-symfony/vendor/symfony/polyfill-mbstring/bootstrap.php): failed to open stream: No such file or directory in /var/www/quiz-symfony/vendor/composer/autoload_real.php on line 66
+[13-Jun-2017 09:07:50 Europe/London] PHP Stack trace:
+[13-Jun-2017 09:07:50 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[13-Jun-2017 09:07:50 Europe/London] PHP   2. require() /var/www/quiz-symfony/web/app_dev.php:22
+[13-Jun-2017 09:07:50 Europe/London] PHP   3. require() /var/www/quiz-symfony/app/autoload.php:7
+[13-Jun-2017 09:07:50 Europe/London] PHP   4. ComposerAutoloaderInitcc5d363adbe6048c38a15e6c61be0ef8::getLoader() /var/www/quiz-symfony/vendor/autoload.php:7
+[13-Jun-2017 09:07:50 Europe/London] PHP   5. composerRequirecc5d363adbe6048c38a15e6c61be0ef8() /var/www/quiz-symfony/vendor/composer/autoload_real.php:56
+[13-Jun-2017 09:07:50 Europe/London] PHP Fatal error:  require(): Failed opening required '/var/www/quiz-symfony/vendor/symfony/polyfill-mbstring/bootstrap.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/quiz-symfony/vendor/composer/autoload_real.php on line 66
+[13-Jun-2017 09:07:50 Europe/London] PHP Stack trace:
+[13-Jun-2017 09:07:50 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[13-Jun-2017 09:07:50 Europe/London] PHP   2. require() /var/www/quiz-symfony/web/app_dev.php:22
+[13-Jun-2017 09:07:50 Europe/London] PHP   3. require() /var/www/quiz-symfony/app/autoload.php:7
+[13-Jun-2017 09:07:50 Europe/London] PHP   4. ComposerAutoloaderInitcc5d363adbe6048c38a15e6c61be0ef8::getLoader() /var/www/quiz-symfony/vendor/autoload.php:7
+[13-Jun-2017 09:07:50 Europe/London] PHP   5. composerRequirecc5d363adbe6048c38a15e6c61be0ef8() /var/www/quiz-symfony/vendor/composer/autoload_real.php:56
+[13-Jun-2017 09:08:00 Europe/London] PHP Warning:  require(/var/www/quiz-symfony/vendor/symfony/polyfill-php56/bootstrap.php): failed to open stream: No such file or directory in /var/www/quiz-symfony/vendor/composer/autoload_real.php on line 66
+[13-Jun-2017 09:08:00 Europe/London] PHP Stack trace:
+[13-Jun-2017 09:08:00 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[13-Jun-2017 09:08:00 Europe/London] PHP   2. require() /var/www/quiz-symfony/web/app_dev.php:22
+[13-Jun-2017 09:08:00 Europe/London] PHP   3. require() /var/www/quiz-symfony/app/autoload.php:7
+[13-Jun-2017 09:08:00 Europe/London] PHP   4. ComposerAutoloaderInitcc5d363adbe6048c38a15e6c61be0ef8::getLoader() /var/www/quiz-symfony/vendor/autoload.php:7
+[13-Jun-2017 09:08:00 Europe/London] PHP   5. composerRequirecc5d363adbe6048c38a15e6c61be0ef8() /var/www/quiz-symfony/vendor/composer/autoload_real.php:56
+[13-Jun-2017 09:08:00 Europe/London] PHP Fatal error:  require(): Failed opening required '/var/www/quiz-symfony/vendor/symfony/polyfill-php56/bootstrap.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/quiz-symfony/vendor/composer/autoload_real.php on line 66
+[13-Jun-2017 09:08:00 Europe/London] PHP Stack trace:
+[13-Jun-2017 09:08:00 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[13-Jun-2017 09:08:00 Europe/London] PHP   2. require() /var/www/quiz-symfony/web/app_dev.php:22
+[13-Jun-2017 09:08:00 Europe/London] PHP   3. require() /var/www/quiz-symfony/app/autoload.php:7
+[13-Jun-2017 09:08:00 Europe/London] PHP   4. ComposerAutoloaderInitcc5d363adbe6048c38a15e6c61be0ef8::getLoader() /var/www/quiz-symfony/vendor/autoload.php:7
+[13-Jun-2017 09:08:00 Europe/London] PHP   5. composerRequirecc5d363adbe6048c38a15e6c61be0ef8() /var/www/quiz-symfony/vendor/composer/autoload_real.php:56
+[13-Jun-2017 09:08:09 Europe/London] PHP Warning:  require(/var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php): failed to open stream: No such file or directory in /var/www/quiz-symfony/vendor/composer/autoload_real.php on line 66
+[13-Jun-2017 09:08:09 Europe/London] PHP Stack trace:
+[13-Jun-2017 09:08:09 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app.php:0
+[13-Jun-2017 09:08:09 Europe/London] PHP   2. require() /var/www/quiz-symfony/web/app.php:6
+[13-Jun-2017 09:08:09 Europe/London] PHP   3. require() /var/www/quiz-symfony/app/autoload.php:7
+[13-Jun-2017 09:08:09 Europe/London] PHP   4. ComposerAutoloaderInitcc5d363adbe6048c38a15e6c61be0ef8::getLoader() /var/www/quiz-symfony/vendor/autoload.php:7
+[13-Jun-2017 09:08:09 Europe/London] PHP   5. composerRequirecc5d363adbe6048c38a15e6c61be0ef8() /var/www/quiz-symfony/vendor/composer/autoload_real.php:56
+[13-Jun-2017 09:08:09 Europe/London] PHP Fatal error:  require(): Failed opening required '/var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php' (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/quiz-symfony/vendor/composer/autoload_real.php on line 66
+[13-Jun-2017 09:08:09 Europe/London] PHP Stack trace:
+[13-Jun-2017 09:08:09 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app.php:0
+[13-Jun-2017 09:08:09 Europe/London] PHP   2. require() /var/www/quiz-symfony/web/app.php:6
+[13-Jun-2017 09:08:09 Europe/London] PHP   3. require() /var/www/quiz-symfony/app/autoload.php:7
+[13-Jun-2017 09:08:09 Europe/London] PHP   4. ComposerAutoloaderInitcc5d363adbe6048c38a15e6c61be0ef8::getLoader() /var/www/quiz-symfony/vendor/autoload.php:7
+[13-Jun-2017 09:08:09 Europe/London] PHP   5. composerRequirecc5d363adbe6048c38a15e6c61be0ef8() /var/www/quiz-symfony/vendor/composer/autoload_real.php:56

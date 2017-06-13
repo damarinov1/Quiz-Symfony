@@ -1,0 +1,29 @@
+html,
+body {
+    margin: 0;
+}
+p {
+    font-size: 0.8em;
+}
+.content {
+    margin: 50px;
+}
+.question-box {
+    padding: 10px;
+    font-size: 1.2em;
+    background: #f20e80;
+    color: #fff;
+    border-radius: 10px;
+}
+.answer-box {
+    padding: 15px;
+    text-align: center;
+}
+.btn {
+    margin: 5px;
+}
+.tf-btn {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}

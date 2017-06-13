@@ -1,0 +1,22 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/service_container.html
+parameters:
+    #parameter_name: value
+
+services:
+    app.session_manager:
+        class: AppBundle\Session\SessionManager
+        arguments: ['@session']
+    
+    app.questions_list:
+        class: AppBundle\Quiz\QuestionsList
+        arguments: ['@session']
+        
+    app.answer_check:
+        class: AppBundle\Quiz\AnswerCheck
+        arguments: ['@app.session_manager', '@session']
+        
+        
+    #service_name:
+    #    class: AppBundle\Directory\ClassName
+    #    arguments: ['@another_service_name', 'plain_value', '%parameter_name%']

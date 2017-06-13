@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+{% set answerCount = app.session.get("answeredQuestionsCount") %}
+
+{% block body %}
+    <div id="quiz" class="tab-pane fade in active">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                {% for msg in app.session.flashbag.get("notice") %}
+                    <div class="alert alert-{{msg.type}}">
+                        <span style="font-weight: bold">{{ msg.message }}</span>
+                    </div>
+                {% endfor %}
+                <h4>Who said it?</h4>
+            </div>
+            <div class="panel-body">
+                <div class="question-box">
+                    {{ questions[answerCount].getQuestion() }}
+                </div>
+                <div class="answer-box">
+                    {{ answer.answer }}
+                    {{ form_start(form, { "action": path("checkAnswerTf") }) }}
+                    {{ form_row(form.question, { "attr": { "value": questions[answerCount].getId() }}) }}
+                    {{ form_row(form.answer, { "attr": { "value": answer.id }}) }}
+                    <button class="tf-btn btn btn-success" type="submit" name="answer_input" value="yes">Yes</button>
+                    <button class="tf-btn btn btn-danger" type="submit" name="answer_input" value="no">No</button>
+                    {{ form_end(form) }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
