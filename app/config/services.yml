@@ -16,6 +16,11 @@ services:
         class: AppBundle\Quiz\AnswerCheck
         arguments: ['@app.session_manager', '@session']
         
+    admin.question:
+        class: AppBundle\Admin\QuestionAdmin
+        arguments: [~, AppBundle\Entity\Questions, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Questions }
         
     #service_name:
     #    class: AppBundle\Directory\ClassName
