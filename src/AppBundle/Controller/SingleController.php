@@ -1,8 +1,8 @@
 <?php
 namespace AppBundle\Controller;
 
-use AppBundle\Entity\Answers;
-use AppBundle\Entity\Questions;
+use AppBundle\Entity\Answer;
+use AppBundle\Entity\Question;
 use AppBundle\Form\AnswerFormType;
 use AppBundle\Session\SessionManager;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -24,7 +24,7 @@ class SingleController extends Controller
             $this->getSessionManager()->init();
         }
 
-        $qRepo = $this->getDoctrine()->getRepository(Questions::class);
+        $qRepo = $this->getDoctrine()->getRepository(Question::class);
         $questionIds = $qRepo->findRandomList();
 
         $this->get("app.questions_list")->excluded($questionIds);
@@ -35,7 +35,7 @@ class SingleController extends Controller
             $questionArray[$key] = $qRepo->find($id);
         }
 
-        $aRepo = $this->getDoctrine()->getRepository(Answers::class);
+        $aRepo = $this->getDoctrine()->getRepository(Answer::class);
         $answer = $aRepo->findRandom();
 
         $form = $this->createForm(AnswerFormType::class);
@@ -59,8 +59,8 @@ class SingleController extends Controller
         $data = $r->request->all();
         $postData = $data['answer_form'];
 
-        $correctAnsIndex = $this->getDoctrine()->getRepository(Questions::class)
-                ->find($postData["question"])->getAId();
+        $correctAnsIndex = $this->getDoctrine()->getRepository(Question::class)
+                ->find($postData["question"])->getAnswer()->getId();
 
         $answerCheck = $this->get("app.answer_check");
         $answerCheck->checkAnswerTf($correctAnsIndex, $postData['answer'], $data['answer_input']);

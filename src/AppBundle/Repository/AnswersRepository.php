@@ -1,7 +1,7 @@
 <?php
 namespace AppBundle\Repository;
 
-use AppBundle\Entity\Questions;
+use AppBundle\Entity\Question;
 
 /**
  * AnswersRepository
