@@ -1,8 +1,8 @@
 <?php
 namespace AppBundle\Controller;
 
-use AppBundle\Entity\Answers;
-use AppBundle\Entity\Questions;
+use AppBundle\Entity\Answer;
+use AppBundle\Entity\Question;
 use AppBundle\Session\SessionManager;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -23,7 +23,7 @@ class MultipleController extends Controller
             $this->getSessionManager()->init();
         }
 
-        $qRepo = $this->getDoctrine()->getRepository(Questions::class);
+        $qRepo = $this->getDoctrine()->getRepository(Question::class);
         $questionIds = $qRepo->findRandomList();
 
         $this->get("app.questions_list")->excluded($questionIds);
@@ -35,9 +35,9 @@ class MultipleController extends Controller
 
         $ansQuestionsCount = $session->get("answeredQuestionsCount");
         $excludedList = $session->get("excluded");
-        $correctAnswerId = $qRepo->find($excludedList[$ansQuestionsCount])->getAId();
+        $correctAnswerId = $qRepo->find($excludedList[$ansQuestionsCount])->getAnswer()->getId();
 
-        $aRepo = $this->getDoctrine()->getRepository(Answers::class);
+        $aRepo = $this->getDoctrine()->getRepository(Answer::class);
         $answerList = $aRepo->findRandomAnsList($correctAnswerId);
                 
         return $this->render("layouts/multiple.html.twig", [
@@ -60,8 +60,8 @@ class MultipleController extends Controller
 
         $ansQuestionsCount = $session->get("answeredQuestionsCount");
         $excludedList = $session->get("excluded");
-        $correctAnswerIndex = $this->getDoctrine()->getRepository(Questions::class)
-                ->find($excludedList[$ansQuestionsCount])->getAId();
+        $correctAnswerIndex = $this->getDoctrine()->getRepository(Question::class)
+                ->find($excludedList[$ansQuestionsCount])->getAnswer()->getId();
 
         $answerCheck = $this->get("app.answer_check");
         $answerCheck->checkAnswerMc($correctAnswerIndex, $postData);

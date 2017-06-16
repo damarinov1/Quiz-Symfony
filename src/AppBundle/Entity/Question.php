@@ -1,5 +1,4 @@
 <?php
-
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
@@ -10,8 +9,9 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="questions")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\QuestionsRepository")
  */
-class Questions
+class Question
 {
+
     /**
      * @var int
      *
@@ -29,12 +29,30 @@ class Questions
     private $question;
 
     /**
-     * @var int
+     * @var Answer
      *
-     * @ORM\Column(name="a_id", type="integer")
+     * @ORM\ManyToOne(targetEntity="Answer", inversedBy="questions")
+     * @ORM\JoinColumn(name="a_id", referencedColumnName="id", nullable=false)
      */
-    private $aId;
+    private $answer;
 
+    /**
+     * 
+     * @return Answer
+     */
+    function getAnswer()
+    {
+        return $this->answer;
+    }
+
+    /**
+     * 
+     * @param \AppBundle\Entity\Answer $answer
+     */
+    function setAnswer(Answer $answer)
+    {
+        $this->answer = $answer;
+    }
 
     /**
      * Get id
@@ -51,7 +69,7 @@ class Questions
      *
      * @param string $question
      *
-     * @return Questions
+     * @return Question
      */
     public function setQuestion($question)
     {
@@ -70,28 +88,8 @@ class Questions
         return $this->question;
     }
 
-    /**
-     * Set aId
-     *
-     * @param integer $aId
-     *
-     * @return Questions
-     */
-    public function setAId($aId)
+    public function __toString()
     {
-        $this->aId = $aId;
-
-        return $this;
-    }
-
-    /**
-     * Get aId
-     *
-     * @return int
-     */
-    public function getAId()
-    {
-        return $this->aId;
+        return $this->question;
     }
 }
-

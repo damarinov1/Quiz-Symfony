@@ -54,3 +54,123 @@
 [13-Jun-2017 09:08:09 Europe/London] PHP   3. require() /var/www/quiz-symfony/app/autoload.php:7
 [13-Jun-2017 09:08:09 Europe/London] PHP   4. ComposerAutoloaderInitcc5d363adbe6048c38a15e6c61be0ef8::getLoader() /var/www/quiz-symfony/vendor/autoload.php:7
 [13-Jun-2017 09:08:09 Europe/London] PHP   5. composerRequirecc5d363adbe6048c38a15e6c61be0ef8() /var/www/quiz-symfony/vendor/composer/autoload_real.php:56
+[16-Jun-2017 13:30:19 Europe/London] PHP Fatal error:  Call to undefined method AppBundle\Entity\Questions::getAId() in /var/www/quiz-symfony/src/AppBundle/Controller/SingleController.php on line 63
+[16-Jun-2017 13:30:19 Europe/London] PHP Stack trace:
+[16-Jun-2017 13:30:19 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[16-Jun-2017 13:30:19 Europe/London] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/quiz-symfony/web/app_dev.php:28
+[16-Jun-2017 13:30:19 Europe/London] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[16-Jun-2017 13:30:19 Europe/London] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /run/shm/quiz/cache/dev/classes.php:4183
+[16-Jun-2017 13:30:19 Europe/London] PHP   5. call_user_func_array() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:30:19 Europe/London] PHP   6. AppBundle\Controller\SingleController->checkAnswerAction() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:30:21 Europe/London] PHP Fatal error:  Call to undefined method AppBundle\Entity\Questions::getAId() in /var/www/quiz-symfony/src/AppBundle/Controller/SingleController.php on line 63
+[16-Jun-2017 13:30:21 Europe/London] PHP Stack trace:
+[16-Jun-2017 13:30:21 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[16-Jun-2017 13:30:21 Europe/London] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/quiz-symfony/web/app_dev.php:28
+[16-Jun-2017 13:30:21 Europe/London] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[16-Jun-2017 13:30:21 Europe/London] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /run/shm/quiz/cache/dev/classes.php:4183
+[16-Jun-2017 13:30:21 Europe/London] PHP   5. call_user_func_array() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:30:21 Europe/London] PHP   6. AppBundle\Controller\SingleController->checkAnswerAction() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:14 Europe/London] PHP Fatal error:  Call to undefined method AppBundle\Entity\Question::getAnswer() in /var/www/quiz-symfony/src/AppBundle/Controller/SingleController.php on line 63
+[16-Jun-2017 13:46:14 Europe/London] PHP Stack trace:
+[16-Jun-2017 13:46:14 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[16-Jun-2017 13:46:14 Europe/London] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/quiz-symfony/web/app_dev.php:28
+[16-Jun-2017 13:46:14 Europe/London] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[16-Jun-2017 13:46:14 Europe/London] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /run/shm/quiz/cache/dev/classes.php:4183
+[16-Jun-2017 13:46:14 Europe/London] PHP   5. call_user_func_array() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:14 Europe/London] PHP   6. AppBundle\Controller\SingleController->checkAnswerAction() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:15 Europe/London] PHP Fatal error:  Call to undefined method AppBundle\Entity\Question::getAnswer() in /var/www/quiz-symfony/src/AppBundle/Controller/SingleController.php on line 63
+[16-Jun-2017 13:46:15 Europe/London] PHP Stack trace:
+[16-Jun-2017 13:46:15 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[16-Jun-2017 13:46:15 Europe/London] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/quiz-symfony/web/app_dev.php:28
+[16-Jun-2017 13:46:15 Europe/London] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[16-Jun-2017 13:46:15 Europe/London] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /run/shm/quiz/cache/dev/classes.php:4183
+[16-Jun-2017 13:46:15 Europe/London] PHP   5. call_user_func_array() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:15 Europe/London] PHP   6. AppBundle\Controller\SingleController->checkAnswerAction() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:16 Europe/London] PHP Fatal error:  Call to undefined method AppBundle\Entity\Question::getAnswer() in /var/www/quiz-symfony/src/AppBundle/Controller/SingleController.php on line 63
+[16-Jun-2017 13:46:16 Europe/London] PHP Stack trace:
+[16-Jun-2017 13:46:16 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[16-Jun-2017 13:46:16 Europe/London] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/quiz-symfony/web/app_dev.php:28
+[16-Jun-2017 13:46:16 Europe/London] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[16-Jun-2017 13:46:16 Europe/London] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /run/shm/quiz/cache/dev/classes.php:4183
+[16-Jun-2017 13:46:16 Europe/London] PHP   5. call_user_func_array() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:16 Europe/London] PHP   6. AppBundle\Controller\SingleController->checkAnswerAction() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:17 Europe/London] PHP Fatal error:  Call to undefined method AppBundle\Entity\Question::getAnswer() in /var/www/quiz-symfony/src/AppBundle/Controller/SingleController.php on line 63
+[16-Jun-2017 13:46:17 Europe/London] PHP Stack trace:
+[16-Jun-2017 13:46:17 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[16-Jun-2017 13:46:17 Europe/London] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/quiz-symfony/web/app_dev.php:28
+[16-Jun-2017 13:46:17 Europe/London] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[16-Jun-2017 13:46:17 Europe/London] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /run/shm/quiz/cache/dev/classes.php:4183
+[16-Jun-2017 13:46:17 Europe/London] PHP   5. call_user_func_array() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:17 Europe/London] PHP   6. AppBundle\Controller\SingleController->checkAnswerAction() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:18 Europe/London] PHP Fatal error:  Call to undefined method AppBundle\Entity\Question::getAnswer() in /var/www/quiz-symfony/src/AppBundle/Controller/SingleController.php on line 63
+[16-Jun-2017 13:46:18 Europe/London] PHP Stack trace:
+[16-Jun-2017 13:46:18 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[16-Jun-2017 13:46:18 Europe/London] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/quiz-symfony/web/app_dev.php:28
+[16-Jun-2017 13:46:18 Europe/London] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[16-Jun-2017 13:46:18 Europe/London] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /run/shm/quiz/cache/dev/classes.php:4183
+[16-Jun-2017 13:46:18 Europe/London] PHP   5. call_user_func_array() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:18 Europe/London] PHP   6. AppBundle\Controller\SingleController->checkAnswerAction() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:19 Europe/London] PHP Fatal error:  Call to undefined method AppBundle\Entity\Question::getAnswer() in /var/www/quiz-symfony/src/AppBundle/Controller/SingleController.php on line 63
+[16-Jun-2017 13:46:19 Europe/London] PHP Stack trace:
+[16-Jun-2017 13:46:19 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[16-Jun-2017 13:46:19 Europe/London] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/quiz-symfony/web/app_dev.php:28
+[16-Jun-2017 13:46:19 Europe/London] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[16-Jun-2017 13:46:19 Europe/London] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /run/shm/quiz/cache/dev/classes.php:4183
+[16-Jun-2017 13:46:19 Europe/London] PHP   5. call_user_func_array() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:19 Europe/London] PHP   6. AppBundle\Controller\SingleController->checkAnswerAction() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:20 Europe/London] PHP Fatal error:  Call to undefined method AppBundle\Entity\Question::getAnswer() in /var/www/quiz-symfony/src/AppBundle/Controller/SingleController.php on line 63
+[16-Jun-2017 13:46:20 Europe/London] PHP Stack trace:
+[16-Jun-2017 13:46:20 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[16-Jun-2017 13:46:20 Europe/London] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/quiz-symfony/web/app_dev.php:28
+[16-Jun-2017 13:46:20 Europe/London] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[16-Jun-2017 13:46:20 Europe/London] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /run/shm/quiz/cache/dev/classes.php:4183
+[16-Jun-2017 13:46:20 Europe/London] PHP   5. call_user_func_array() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:20 Europe/London] PHP   6. AppBundle\Controller\SingleController->checkAnswerAction() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:26 Europe/London] PHP Fatal error:  Call to undefined method AppBundle\Entity\Question::getAnswer() in /var/www/quiz-symfony/src/AppBundle/Controller/SingleController.php on line 63
+[16-Jun-2017 13:46:26 Europe/London] PHP Stack trace:
+[16-Jun-2017 13:46:26 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[16-Jun-2017 13:46:26 Europe/London] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/quiz-symfony/web/app_dev.php:28
+[16-Jun-2017 13:46:26 Europe/London] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[16-Jun-2017 13:46:26 Europe/London] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /run/shm/quiz/cache/dev/classes.php:4183
+[16-Jun-2017 13:46:26 Europe/London] PHP   5. call_user_func_array() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:26 Europe/London] PHP   6. AppBundle\Controller\SingleController->checkAnswerAction() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:26 Europe/London] PHP Fatal error:  Call to undefined method AppBundle\Entity\Question::getAnswer() in /var/www/quiz-symfony/src/AppBundle/Controller/SingleController.php on line 63
+[16-Jun-2017 13:46:26 Europe/London] PHP Stack trace:
+[16-Jun-2017 13:46:26 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[16-Jun-2017 13:46:26 Europe/London] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/quiz-symfony/web/app_dev.php:28
+[16-Jun-2017 13:46:26 Europe/London] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[16-Jun-2017 13:46:26 Europe/London] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /run/shm/quiz/cache/dev/classes.php:4183
+[16-Jun-2017 13:46:26 Europe/London] PHP   5. call_user_func_array() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:26 Europe/London] PHP   6. AppBundle\Controller\SingleController->checkAnswerAction() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:27 Europe/London] PHP Fatal error:  Call to undefined method AppBundle\Entity\Question::getAnswer() in /var/www/quiz-symfony/src/AppBundle/Controller/SingleController.php on line 63
+[16-Jun-2017 13:46:27 Europe/London] PHP Stack trace:
+[16-Jun-2017 13:46:27 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[16-Jun-2017 13:46:27 Europe/London] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/quiz-symfony/web/app_dev.php:28
+[16-Jun-2017 13:46:27 Europe/London] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[16-Jun-2017 13:46:27 Europe/London] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /run/shm/quiz/cache/dev/classes.php:4183
+[16-Jun-2017 13:46:27 Europe/London] PHP   5. call_user_func_array() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:27 Europe/London] PHP   6. AppBundle\Controller\SingleController->checkAnswerAction() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:28 Europe/London] PHP Fatal error:  Call to undefined method AppBundle\Entity\Question::getAnswer() in /var/www/quiz-symfony/src/AppBundle/Controller/SingleController.php on line 63
+[16-Jun-2017 13:46:28 Europe/London] PHP Stack trace:
+[16-Jun-2017 13:46:28 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[16-Jun-2017 13:46:28 Europe/London] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/quiz-symfony/web/app_dev.php:28
+[16-Jun-2017 13:46:28 Europe/London] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[16-Jun-2017 13:46:28 Europe/London] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /run/shm/quiz/cache/dev/classes.php:4183
+[16-Jun-2017 13:46:28 Europe/London] PHP   5. call_user_func_array() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:28 Europe/London] PHP   6. AppBundle\Controller\SingleController->checkAnswerAction() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:29 Europe/London] PHP Fatal error:  Call to undefined method AppBundle\Entity\Question::getAnswer() in /var/www/quiz-symfony/src/AppBundle/Controller/SingleController.php on line 63
+[16-Jun-2017 13:46:29 Europe/London] PHP Stack trace:
+[16-Jun-2017 13:46:29 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[16-Jun-2017 13:46:29 Europe/London] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/quiz-symfony/web/app_dev.php:28
+[16-Jun-2017 13:46:29 Europe/London] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[16-Jun-2017 13:46:29 Europe/London] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /run/shm/quiz/cache/dev/classes.php:4183
+[16-Jun-2017 13:46:29 Europe/London] PHP   5. call_user_func_array() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:29 Europe/London] PHP   6. AppBundle\Controller\SingleController->checkAnswerAction() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:30 Europe/London] PHP Fatal error:  Call to undefined method AppBundle\Entity\Question::getAnswer() in /var/www/quiz-symfony/src/AppBundle/Controller/SingleController.php on line 63
+[16-Jun-2017 13:46:30 Europe/London] PHP Stack trace:
+[16-Jun-2017 13:46:30 Europe/London] PHP   1. {main}() /var/www/quiz-symfony/web/app_dev.php:0
+[16-Jun-2017 13:46:30 Europe/London] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /var/www/quiz-symfony/web/app_dev.php:28
+[16-Jun-2017 13:46:30 Europe/London] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /var/www/quiz-symfony/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[16-Jun-2017 13:46:30 Europe/London] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /run/shm/quiz/cache/dev/classes.php:4183
+[16-Jun-2017 13:46:30 Europe/London] PHP   5. call_user_func_array() /run/shm/quiz/cache/dev/classes.php:4228
+[16-Jun-2017 13:46:30 Europe/London] PHP   6. AppBundle\Controller\SingleController->checkAnswerAction() /run/shm/quiz/cache/dev/classes.php:4228

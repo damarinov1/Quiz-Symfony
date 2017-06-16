@@ -1,8 +1,8 @@
 <?php
-
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Answers
@@ -10,8 +10,9 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="answers")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\AnswersRepository")
  */
-class Answers
+class Answer
 {
+
     /**
      * @var int
      *
@@ -27,8 +28,22 @@ class Answers
      * @ORM\Column(name="answer", type="string", length=255)
      */
     private $answer;
+    
+    /**
+     *
+     * @ORM\OneToMany(targetEntity="Question", mappedBy="answer")
+     */
+    private $questions;
+    
+    public function __construct()
+    {
+        $this->questions = new ArrayCollection();
+    }
 
-
+    public function getQuestions()
+    {
+        return $this->questions;
+    }
     /**
      * Get id
      *
@@ -44,7 +59,7 @@ class Answers
      *
      * @param string $answer
      *
-     * @return Answers
+     * @return Answer
      */
     public function setAnswer($answer)
     {
@@ -62,5 +77,9 @@ class Answers
     {
         return $this->answer;
     }
-}
 
+    public function __toString()
+    {
+        return $this->answer;
+    }
+}

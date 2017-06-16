@@ -11,28 +11,24 @@ use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 
-class QuestionAdmin extends AbstractAdmin
+class AnswerAdmin extends AbstractAdmin
 {
 
-    //put your code here
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add("question", "text")
-            ->add("answer", "sonata_type_model", [
-                "class" => "AppBundle\Entity\Answer",
-                "property" => "answer"
-            ]);
+        $formMapper
+            ->add("answer", "text");
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
-        $datagridMapper->add("question");
+        $datagridMapper
+            ->add("answer");
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->addIdentifier("question")
             ->addIdentifier("answer");
     }
 }
